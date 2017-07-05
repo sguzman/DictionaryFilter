@@ -5,7 +5,12 @@ function wordRegexFilter(regex) {
 }
 
 function createListFromWords(wordList) {
-    console.log(wordList);
+    wordListElementsHash.forEach(function(key) {
+        key.hidden = true;
+    });
+    wordList.forEach(function(w) {
+        wordListElementsHash.get(w).hidden = false;
+    });
 }
 
 function onClick() {
