@@ -146,11 +146,42 @@ header {
     text-align: center;
 }
 
+#text-box::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: rgba(255,255,255,.7);
+    font-size: 200%;
+    font-weight: 100;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
 
+#text-box:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: rgba(255,255,255,.7);
+    font-size: 200%;
+    font-weight: 100;
+    opacity:  1;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
 
+#text-box::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: rgba(255,255,255,.7);
+    font-size: 200%;
+    font-weight: 100;
+    opacity:  1;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
 
+#text-box:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255,255,255,.7);
+    font-size: 200%;
+    font-weight: 100;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
 
-
+#text-box:-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255,255,255,.7);
+    font-size: 200%;
+    font-weight: 100;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
 
 
 
