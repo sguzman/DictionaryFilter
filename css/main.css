@@ -95,9 +95,24 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body {
+#container-body {
     background-color: #F5F5F5;
 }
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #e9dfc4;
+    background: -moz-linear-gradient(left, #e9dfc4 0%, #e9dfc4 1%, #ede3c8 2%, #ede3c8 24%, #ebddc3 25%, #e9dfc4 48%, #ebddc3 49%, #e6d8bd 52%, #e6d8bd 53%, #e9dbc0 54%, #e6d8bd 55%, #e6d8bd 56%, #e9dbc0 57%, #e6d8bd 58%, #e6d8bd 73%, #e9dbc0 74%, #e9dbc0 98%, #ebddc3 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #e9dfc4), color-stop(1%, #e9dfc4), color-stop(2%, #ede3c8), color-stop(24%, #ede3c8), color-stop(25%, #ebddc3), color-stop(48%, #e9dfc4), color-stop(49%, #ebddc3), color-stop(52%, #e6d8bd), color-stop(53%, #e6d8bd), color-stop(54%, #e9dbc0), color-stop(55%, #e6d8bd), color-stop(56%, #e6d8bd), color-stop(57%, #e9dbc0), color-stop(58%, #e6d8bd), color-stop(73%, #e6d8bd), color-stop(74%, #e9dbc0), color-stop(98%, #e9dbc0), color-stop(100%, #ebddc3));
+    background: -webkit-linear-gradient(left, #e9dfc4 0%, #e9dfc4 1%, #ede3c8 2%, #ede3c8 24%, #ebddc3 25%, #e9dfc4 48%, #ebddc3 49%, #e6d8bd 52%, #e6d8bd 53%, #e9dbc0 54%, #e6d8bd 55%, #e6d8bd 56%, #e9dbc0 57%, #e6d8bd 58%, #e6d8bd 73%, #e9dbc0 74%, #e9dbc0 98%, #ebddc3 100%);
+    background: -o-linear-gradient(left, #e9dfc4 0%, #e9dfc4 1%, #ede3c8 2%, #ede3c8 24%, #ebddc3 25%, #e9dfc4 48%, #ebddc3 49%, #e6d8bd 52%, #e6d8bd 53%, #e9dbc0 54%, #e6d8bd 55%, #e6d8bd 56%, #e9dbc0 57%, #e6d8bd 58%, #e6d8bd 73%, #e9dbc0 74%, #e9dbc0 98%, #ebddc3 100%);
+    background: -ms-linear-gradient(left, #e9dfc4 0%, #e9dfc4 1%, #ede3c8 2%, #ede3c8 24%, #ebddc3 25%, #e9dfc4 48%, #ebddc3 49%, #e6d8bd 52%, #e6d8bd 53%, #e9dbc0 54%, #e6d8bd 55%, #e6d8bd 56%, #e9dbc0 57%, #e6d8bd 58%, #e6d8bd 73%, #e9dbc0 74%, #e9dbc0 98%, #ebddc3 100%);
+    background: linear-gradient(to right, #e9dfc4 0%, #e9dfc4 1%, #ede3c8 2%, #ede3c8 24%, #ebddc3 25%, #e9dfc4 48%, #ebddc3 49%, #e6d8bd 52%, #e6d8bd 53%, #e9dbc0 54%, #e6d8bd 55%, #e6d8bd 56%, #e9dbc0 57%, #e6d8bd 58%, #e6d8bd 73%, #e9dbc0 74%, #e9dbc0 98%, #ebddc3 100%);
+    background-size: 120px;
+    background-repeat: repeat;
+}
+
 
 h1, h2, h3, h4, p {
     text-align: center;
@@ -124,7 +139,7 @@ p {
     font-weight: 100;
 }
 
-div#container {
+div#container-body {
     display: flex;
     flex-direction: column;
 }
@@ -137,25 +152,29 @@ div#container {
     float: right;
     width: 33%;
 }
-#container-title {
+#container {
     display: inline-block;
     width: 33%;
 }
 
-header {
-    text-align: center;
+#text-box {
+    width: 100%;
+    background-color: #F5F5F5;
+    border: none;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4) inset;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 300%;
 }
 
 #text-box::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: rgba(255,255,255,.7);
-    font-size: 200%;
     font-weight: 100;
     text-shadow: 0 2px 3px rgba(0,0,0,0.4);
 }
 
 #text-box:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color: rgba(255,255,255,.7);
-    font-size: 200%;
     font-weight: 100;
     opacity:  1;
     text-shadow: 0 2px 3px rgba(0,0,0,0.4);
@@ -163,7 +182,6 @@ header {
 
 #text-box::-moz-placeholder { /* Mozilla Firefox 19+ */
     color: rgba(255,255,255,.7);
-    font-size: 200%;
     font-weight: 100;
     opacity:  1;
     text-shadow: 0 2px 3px rgba(0,0,0,0.4);
@@ -171,14 +189,12 @@ header {
 
 #text-box:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: rgba(255,255,255,.7);
-    font-size: 200%;
     font-weight: 100;
     text-shadow: 0 2px 3px rgba(0,0,0,0.4);
 }
 
 #text-box:-ms-input-placeholder { /* Microsoft Edge */
     color: rgba(255,255,255,.7);
-    font-size: 200%;
     font-weight: 100;
     text-shadow: 0 2px 3px rgba(0,0,0,0.4);
 }
