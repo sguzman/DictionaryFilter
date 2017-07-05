@@ -173122,3 +173122,14 @@ var words = [
     "zyzzyva",
     "zyzzyvas"
 ];
+
+const wordListElementsHash = new Map();
+
+words.forEach(function(wd) {
+    const w = document.createElement('H4');
+    w.class = 'word';
+    w.innerText = wd;
+    w.hidden = true;
+    wordListElementsHash.set(wd, w);
+    document.getElementById('list-content').appendChild(w);
+});
