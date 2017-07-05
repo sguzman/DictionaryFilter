@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="./js/words.js"></script>
+        <script async src="./js/words.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -30,6 +30,10 @@
             <div id="container-body">
                 <article>
                     <input id="text-box"  type="text" placeholder="Enter regex"/>
+                    <aside>Forward slashes already provided</aside>
+                    <button type="button" id="button" onclick="onClick()" >Search</button>
+                    <div>
+                    </div>
                 </article>
             </div>
         </div>
@@ -38,7 +42,7 @@
         </div>
 
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script defer src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
